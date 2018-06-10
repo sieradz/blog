@@ -4,8 +4,9 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
-# Ignore file containing id and password
+# Ignore files containing id and password
 /app/controllers/articles_controller.rb
+/config/database.yml
 
 # Ignore bundler config.
 /.bundle
