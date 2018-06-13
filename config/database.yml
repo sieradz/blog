@@ -9,8 +9,8 @@ default: &default
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
-  username: <blogUsername>
-  password: <blogPassword
+  username: <%= ENV.fetch("ROR_PG_BLOG_USER") %>
+  password: <%= ENV.fetch("ROR_PG_BLOG_PWD") %>
 
 development:
   <<: *default

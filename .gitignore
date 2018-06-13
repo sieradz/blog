@@ -6,7 +6,6 @@
 
 # Ignore files containing id and password
 /app/controllers/articles_controller.rb
-/config/database.yml
 
 # Ignore bundler config.
 /.bundle
