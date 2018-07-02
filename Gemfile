@@ -35,6 +35,11 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+
+# Known high severity security vulnerability detected in sprockets >=3.0.0,<3.7.2
+# Got above msg from github which suggested line below
+gem 'sprockets', '~> 3.7.2'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
